@@ -1,7 +1,8 @@
-import ApexChart from 'react-apexcharts'
-import { ChartProps } from 'react-apexcharts/lib/components/ApexCharts'
+import { ApexOptions } from "apexcharts";
+import ApexChart from 'react-apexcharts';
+ 
 export default function Chart() {
-    const options: ChartProps = {
+    const options: ApexOptions = {
         xaxis: {
             type: 'datetime',
         },
