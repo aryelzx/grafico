@@ -1,6 +1,7 @@
 import { ApexOptions } from "apexcharts";
 import ApexChart from 'react-apexcharts';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Chart(props: any) {
     const options: ApexOptions = {
         xaxis: {
@@ -18,8 +19,9 @@ export default function Chart(props: any) {
     }]
 
     return (
-        <div>
+        <div className="w-full flex bg-black">
             <ApexChart
+                className="w-full"
                 options={options}
                 series={series}
                 type="candlestick"
